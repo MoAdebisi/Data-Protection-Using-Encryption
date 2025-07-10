@@ -4,3 +4,5 @@ Key Objectives:
 - Generate and manage encryption keys with AWS KMS
 - Set up and use the AWS Encryption CLI
 - Encrypt plaintext and decrypt ciphertext
+##  Creating an AWS KMS key
+This step initiates the encryption workflow by generating a cryptographic key with AWS Key Management Service (KMS). AWS KMS enables the creation, storage, and management of secure keys across multiple AWS services. The generated key will be used in subsequent steps to encrypt and decrypt data within an EC2-hosted environment.
