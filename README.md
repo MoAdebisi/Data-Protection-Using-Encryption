@@ -7,4 +7,11 @@ Key Objectives:
 ##  Creating an AWS KMS key
 This step initiates the encryption workflow by generating a cryptographic key with AWS Key Management Service (KMS). AWS KMS enables the creation, storage, and management of secure keys across multiple AWS services. The generated key will be used in subsequent steps to encrypt and decrypt data within an EC2-hosted environment.
 <img width="907" height="607" alt="Screenshot 2025-07-10 at 22 07 21" src="https://github.com/user-attachments/assets/6cbccd4a-8c4b-4fea-b72c-ce42babb9594" />
+Symmetric encryption uses the same key to encrypt and decrypt data, which makes it fast and efficient to use.
 <img width="1440" height="695" alt="Screenshot 2025-07-10 at 22 12 43" src="https://github.com/user-attachments/assets/24fda8f6-87e4-4570-a815-49e6247f1ff6" />
+## Configuring the File Server instance
+This step of the project focuses on preparing the EC2 environment to leverage AWS cryptographic services. The primary goal is to configure AWS credentials on the EC2 file server instance, enabling secure interaction with AWS Key Management Service (KMS). Following credential setup, the AWS Encryption Command Line Interface (CLI) will be installed to facilitate encryption and decryption operations. Together, these steps establish the foundational tools required to perform secure key-based data transformations directly from the EC2 instance.
+<img width="2618" height="1420" alt="image" src="https://github.com/user-attachments/assets/642c03f7-02f5-4bae-a338-2b0d8b19f00a" />
+AWS credentials is now configured and the AWS Encryption CLI is installed to enable secure data encryption with KMS.
+## Encrypt and decrypt data
+This task involves creating a mock sensitive file, encrypting its contents using AWS KMS and the Encryption CLI, and then decrypting the file to verify the data remains secure yet accessible.
